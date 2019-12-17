@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="../style/style.css" rel="stylesheet" type="text/css">
+    <link href="../navigatorPlugin/css/style.css" rel="stylesheet" type="text/css">
+    <script src="../navigatorPlugin/js/Navigator.js" async></script>
+    <title>开发</title>
+</head>
+
+<body>
+    <nav id="TopNavigator">
+        <a href="../MainPage.html" class="navMenu"><span class="sprite bg-homeIcon"></span>首页</a>
+        <a href="../Introduction.html" class="navMenu"><span class="sprite bg-contentIcon"></span>介绍</a>
+        <a href="../DevelopmentHomePage.html" class="navMenu"><span class="sprite bg-contentIcon"></span>开发资料</a>
+        <span id="search">
+            <input type="text" id="searchInput" placeholder="搜索...">
+            <button class="searchButton"><span class="sprite bg-searchIcon"></span></button>
+        </span>
+    </nav>
+    <div class="nav">
+        <div class="mainTitle">开发</div>
+        <div class="subTitle" data-icon-title="subtitle">导航</div>
+        <li data-icon="category"><a href="./tools.html">工具</a> </li>
+        <li data-icon="category"><a href="./structure.html">目录结构</a></li>
+        <li data-icon="category"><a href="#expand">扩展</a></li>
+        <li data-icon="category"><a href="#">插件</a></li>
+        <li data-icon="category"><a href="#">基础能力与硬件能力</a></li>
+        <li data-icon="category"><a href="./others.html"> 其他资料</a></li>
+    </div>
+    <div class="content">
+        <h1 id="title">开发资料</h1>
+        <div id="structure">
+            <h2>目录结构</h2>
+            <p>
+                小程序包含一个描述整体程序的 app 和多个描述各自页面的 page。<br>
+                一个小程序主体部分由三个文件组成，必须放在项目的根目录，如下：<br>
+                <table class="structureTable">
+                    <tr>
+                        <th>文件</th>
+                        <th>必需</th>
+                        <th>作用</th>
+                    </tr>
+                    <tr>
+                        <td><em>app.js</em></td>
+                        <td>是</td>
+                        <td>小程序逻辑</td>
+                    </tr>
+                    <tr>
+                        <td><em>app.json</em></td>
+                        <td>是</td>
+                        <td>小程序公共配置</td>
+                    </tr>
+                    <tr>
+                        <td><em>app.wxss</em></td>
+                        <td>否</td>
+                        <td>小程序公共样式表</td>
+                    </tr>
+                </table>
+                <br>
+                一个小程序页面由四个文件组成，分别是：<br>
+                <table class="structureTable">
+                    <tr>
+                        <th>文件类型</th>
+                        <th>必需</th>
+                        <th>作用</th>
+                    </tr>
+                    <tr>
+                        <td><em>js</em></td>
+                        <td>是</td>
+                        <td>页面逻辑</td>
+                    </tr>
+                    <tr>
+                        <td><em>wxml</em></td>
+                        <td>是</td>
+                        <td>页面结构</td>
+                    </tr>
+                    <tr>
+                        <td><em>json</em></td>
+                        <td>否</td>
+                        <td>页面配置</td>
+                    </tr>
+                    <tr>
+                        <td><em>wxss</em></td>
+                        <td>否</td>
+                        <td>页面样式表</td>
+                    </tr>
+                </table>
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

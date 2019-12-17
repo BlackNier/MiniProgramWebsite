@@ -1,0 +1,121 @@
+@keyframes liOnmouse
+{
+    to
+    {
+        background-color:rgba(224, 224, 224, 0.377) ;
+    }
+}
+.nav{
+    width: 11%;
+    height: 100%;
+    background-color: white;
+    position: fixed;
+    top:0;
+    left:0;
+    padding-top: 10px;
+    padding-bottom:10px;
+    box-shadow: 1px 5px 5px 3px #888888;
+}
+
+.mainTitle{
+    padding: 5%;
+    font-size:24px;
+    width:80%;
+    background-color:rgba(224, 224, 224, 0.377) !important;
+    text-indent:10%;
+}
+
+.subTitle{
+    padding: 4%;
+    font-size:20px;
+    width:82%;
+    background-color:rgba(224, 224, 224, 0.377) !important;
+    text-indent:10%;
+}
+
+.dropdown{
+    text-indent:10%;
+    top:0px;
+    width:100%;
+    font-size:18px;
+    background-color:transparent;
+    color: black;
+    list-style: none;
+}
+
+.dropdown-Menu{
+    margin:0px;
+    width:100%;
+    font-size:18px;
+    padding:0%;
+    background-color:transparent;
+    color: black;
+    display: none;
+}
+
+.dropdown-Head{
+    background-image:url("../css/icons/arrow-down.png");
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size:10%;
+    width:100%;
+    font-size:18px;
+    background-color:transparent;
+    cursor: pointer;
+    color: black;
+}
+
+.dropdown-Head:hover{
+    /*background-color: rgb(238, 238, 238) !important;*/
+    animation: "liOnmouse" 0.5s ease forwards !important;
+}
+
+.splitLine{
+    margin-left:3%;
+    margin-right:10%;
+    width: 87%;
+    border-top: solid rgb(187, 187, 187) 1px;
+}
+#hideBtn{
+    background-image: url("../css/icons/arrow-lift.png");
+    background-size: 100%;
+    background-position: center; 
+    background-color: transparent;
+    background-repeat: no-repeat;
+    position: absolute;
+    top:0px;
+    right:0px;
+    width:10%;
+    height:100%;
+    border: none;
+    cursor: pointer;
+}
+
+#styleBtn{
+    position: absolute;
+    bottom:10%;
+    left:10%;
+    width:20%;
+    height:5%;
+    border: none;
+    cursor: pointer;
+}
+a
+{
+    text-decoration-line: none;
+    color: black;
+}
+
+.nav li{
+    width:84%;
+    font-size:18px;
+    padding:3%;
+    text-indent:10%;
+    border-bottom:solid;
+    border-width: 1px;
+    border-color:rgb(238, 238, 238);
+}
+
+.nav li:hover{
+    animation: "liOnmouse" 0.5s ease forwards !important;
+}

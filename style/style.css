@@ -1,0 +1,296 @@
+@media only screen and (max-width: 600px) {
+    #TopNavigator 
+    { 
+        font-size:0.8em; 
+        height:5%;
+        left:0; 
+        top:0 !important;
+        border-radius: 0px !important; 
+        box-shadow: 1px 5px 5px 3px #888888;
+    }
+    .navMenu
+    {
+        padding:5px !important;
+    }
+    .picture
+    {
+        margin-top:10% !important;
+    }
+    .sideNavigator_visible
+    { 
+        width:80% !important;
+        top:9% !important;
+        height:90% !important;
+        left:0 !important;
+        border-radius: 0 !important;
+        display: none;
+    }
+    #navigatorBtn
+    {
+        display:block !important;
+    }
+    #search
+    {
+        margin-left:0% !important;
+    }
+    Input[type=text]
+    {
+        height:18px !important;
+        width: 100px !important;
+        border: 1px solid rgb(238, 238, 238);
+        border-radius: 4px;
+    }
+    .searchButton
+    {
+        background-color:transparent;
+        border: none;
+        height:18px !important;
+        width:18px !important;
+        cursor: pointer;
+    }
+}
+
+@font-face
+{
+    font-family: "Source San Hans";
+    src:url("./font/Source\ Han\ Sans.ttf");
+}
+@keyframes magnify
+{
+    to{
+        width:53%;
+    }
+}
+@keyframes toLightgray
+{
+    to
+    {
+        background-color: lightgray;
+    }
+}
+@keyframes toLightergray
+{
+    to
+    {
+        background-color:rgba(224, 224, 224, 0.377) ;
+    }
+}
+@keyframes toHide
+{
+    to{
+        display:none !important;
+    }
+}
+@keyframes toVisible
+{
+    to{
+        display:block !important;
+    }
+}
+body
+{
+    font-family:"Source San Hans";
+}
+.MainPageContent
+{
+    width:100%;
+}
+.MainPageContent:hover
+{
+    animation: "toLightergray" 0.5s ease forwards;
+}
+.HomePicture
+{
+    width: 50%;
+    height:auto;
+    float:right;
+}
+.HomePicture:hover
+{
+    animation: 'magnify' 1s ease forwards;
+}
+.HomePageImg div
+{
+    position: relative;
+    width:100%;
+    background-color:rgba(114, 113, 113, 0.39);
+    text-align:center;
+    font-size:1em;
+    z-index:2;
+    left:0px;
+    top:-30px;
+}
+h1
+{
+    width: 100%;
+    background-image:linear-gradient(to right, rgba(241, 238, 238, 0.521), white)
+}
+h1:hover
+{
+    animation: "toLightgray" 0.5s linear forwards;
+}
+.content
+{
+    margin-left: 12%;
+    margin-right:12%;
+    width:76%;
+    height:450px;
+}
+.introductionContent
+{
+    margin-left: 12%;
+    margin-right:12%;
+    width:76%;
+    height:450px;
+}
+.introductionContent img
+{
+    width:80%;
+}
+
+.picture
+{
+    width: 100%;
+    height:auto;
+    margin-top:15px;
+}
+#title
+{
+    margin-top:10%;
+}
+#TopNavigator
+{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    top:1%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-radius: 15px; 
+    box-shadow: 1px 5px 5px 3px #888888;
+    z-index:99999;
+}
+.sideNavigator_visible
+{
+    float: left;
+    width: 10%;
+    background-color: white;
+    position: fixed;
+    top:13%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-radius: 15px; 
+    box-shadow: 1px 5px 5px 3px #888888;
+    z-index:99999;
+    animation:"toHide" 0.5s ease backwards;
+}
+
+.sideNavigator_hide
+{
+    float: left;
+    width: 10%;
+    background-color: white;
+    position: fixed;
+    top:13%;
+    padding-top: 10px;
+    padding-bottom:10px;
+    border-radius: 15px; 
+    box-shadow: 1px 5px 5px 3px #888888;
+    z-index:99999;
+}
+.sidenavMenu{
+    margin-left:5px;
+    padding-right:50px;
+    background-color:transparent;
+    color: black;
+}
+.sidenavMenu:hover
+{
+    background-color: rgb(238, 238, 238);
+}
+.structureTable
+{
+    width:60%;
+    text-align: center;
+}
+.structureTable em
+{
+    color:rgb(127, 176, 199);
+}
+.structureTable th
+{
+    background-color: rgba(211, 211, 211, 0.466);;
+}
+a
+{
+    text-decoration-line: none;
+    color: black;
+}
+.navMenu{
+    padding-top:10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color:transparent;
+    color: black;
+}
+.navMenu:hover
+{
+    background-color: rgb(238, 238, 238);
+}
+#search
+{
+    margin-left:60%;
+}
+#navigatorBtn
+{
+    background-color:transparent;
+    border: none;
+    cursor: pointer;
+    margin-top:20%;
+    background-image: url("../Assets/DevelopPage/navigator.png");
+    background-size:100%;
+    width:25px;
+    height:25px;
+    display:none;
+}
+Input[type=text]
+{
+    height:35px;
+    width:200px;
+    border: 1px solid rgb(238, 238, 238);
+    border-radius: 4px;
+}
+.searchButton
+{
+    background-color:transparent;
+    border: none;
+    height:35px;
+    width:35px;
+    cursor: pointer;
+}
+p
+{
+    text-indent:2em;
+}
+.sprite {
+    display:inline-block;
+    width: 18px;height: 18px;
+    background-image: url("../Assets/icons_sprites.png");
+}    
+
+.sprite.bg-homeIcon {
+    background-position: -48px -10px;
+}
+
+.sprite.bg-contentIcon {
+    background-position: -10px -10px;
+}
+
+.sprite.bg-searchIcon {
+    background-position: -48px -48px;
+}
+
+.sprite.bg-listIcon {
+    background-position: -10px -48px;
+}

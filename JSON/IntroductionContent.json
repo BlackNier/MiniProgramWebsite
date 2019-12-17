@@ -1,0 +1,108 @@
+{
+    "register": [
+        {
+            "text": "<strong>注册小程序帐号</strong><br>",
+            "img": ""
+        },
+        {
+            "text": "在微信公众平台官网首页<a href='https://mp.weixin.qq.com'>（mp.weixin.qq.com）</a>点击右上角的“立即注册”按钮。<br>",
+            "img": "./Assets/Introduction/register1.png"
+        },
+        {
+            "text": "<strong>选择注册的帐号类型</strong><br>",
+            "img": ""
+        },
+        {
+            "text": "选择“小程序”，点击“查看类型区别”可查看不同类型帐号的区别和优势。<br>",
+            "img": ""
+        },
+        {
+            "text": "<strong>填写邮箱和密码</strong><br>",
+            "img": ""
+        },
+        {
+            "text": "请填写未注册过公众平台、开放平台、企业号、未绑定个人号的邮箱。<br>",
+            "img": ""
+        },
+        {
+            "text": "<strong>激活邮箱</strong><br>",
+            "img": ""
+        },
+        {
+            "text": "登录邮箱，查收激活邮件，点击激活链接。<br>",
+            "img": ""
+        },
+        {
+            "text": "<strong>填写主体信息</strong><br>",
+            "img": ""
+        },
+        {
+            "text": "点击激活链接后，继续下一步的注册流程。请选择主体类型选择，完善主体信息和管理员信息。<br>",
+            "img": ""
+        },
+        {
+            "text": "<strong>选择主体类型</strong><br>",
+            "img": "./Assets/Introduction/register2.png"
+        },
+        {
+            "text": "主体类型说明如下:",
+            "img": "./Assets/Introduction/register3.png"
+        },
+        {
+            "text":"<strong>填写主体信息并选择验证方式</strong><br>",
+            "img":""
+        },
+        {
+            "text":"<ul>企业类型帐号可选择两种主体验证方式。",
+            "img":""
+        },
+        {
+            "text":"<li>方式一：需要用公司的对公账户向腾讯公司打款来验证主体身份。打款信息在提交主体信息后可以查看到。</li>",
+            "img":""
+        },
+        {
+            "text":"<li>方式二：通过微信认证验证主体身份，需支付300元认证费。认证通过前，小程序部分功能暂无法使用。</li></ul>",
+            "img":"./Assets/Introduction/register4.png"
+        },
+        {
+            "text":"政府、媒体、其他组织类型帐号，必须通过微信认证验证主体身份。认证通过前，小程序部分功能暂无法使用。<br>",
+            "img":"./Assets/Introduction/register5.png"
+        },
+        {
+            "text":"微信认证入口：登录小程序 - 设置 - 微信认证详情<br>",
+            "img":"./Assets/Introduction/register6.png"
+        },
+        {
+            "text":"<strong>填写管理员信息</strong><br>",
+            "img":"./Assets/Introduction/register7.png"
+        },
+        {
+            "text":"<strong>确认主体信息不可变更</strong><br>",
+            "img":"./Assets/Introduction/register8.png"
+        },
+        {
+            "text":"<strong>点击确认完成注册流程</strong><br>",
+            "img":""
+        },
+        {
+            "text":"选择对公打款的用户，请根据页面提示，向指定的收款帐号汇入指定金额。<br>",
+            "img":""
+        },
+        {
+            "text":"<em>注意：请在10天内完成汇款，否则将注册失败。</em><br>",
+            "img":"./Assets/Introduction/register9.png"
+        },
+        {
+            "text":"选择通过微信认证验证主体身份的用户，完成注册流程后请尽快进行微信认证，认证完成之前部分功能暂不可使用。<br><br>",
+            "img":""
+        }
+    ],
+    "preparation": "",
+    "code": "",
+    "identification": "",
+    "payment": "",
+    "bind": "",
+    "officialAccounts": "",
+    "app": "",
+    "enterprise": ""
+}

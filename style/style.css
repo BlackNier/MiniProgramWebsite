@@ -223,8 +223,8 @@ h1:hover
 }
 a
 {
-    text-decoration-line: none;
-    color: black;
+    text-decoration-line: none !important; 
+    color: black !important;
 }
 .navMenu{
     padding-top:10px;

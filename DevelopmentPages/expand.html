@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="../navigatorPlugin/css/style.css" rel="stylesheet" type="text/css">
+    <script src="../navigatorPlugin/js/Navigator.js" async></script>
+    <link href="../style/style.css" rel="stylesheet" type="text/css">
+    <title>开发</title>
+</head>
+
+<body>
+    <nav id="TopNavigator">
+        <a href="../MainPage.html" class="navMenu"><span class="sprite bg-homeIcon"></span>首页</a>
+        <a href="../Introduction.html" class="navMenu"><span class="sprite bg-contentIcon"></span>介绍</a>
+        <a href="../DevelopmentHomePage.html" class="navMenu"><span class="sprite bg-contentIcon"></span>开发资料</a>
+        <span id="search">
+            <input type="text" id="searchInput" placeholder="搜索...">
+            <button class="searchButton"><span class="sprite bg-searchIcon"></span></button>
+        </span>
+    </nav>
+    <div class="nav">
+        <div class="mainTitle">开发</div>
+        <div class="subTitle" data-icon-title="subtitle">导航</div>
+        <li data-icon="category"><a href="./tools.html">工具</a> </li>
+        <li data-icon="category"><a href="./structure.html">目录结构</a></li>
+        <li data-icon="category"><a href="./ability.html">硬件能力</a></li>
+        <li data-icon="category"><a href="./expand.html">扩展组件</a></li>
+        <li data-icon="category"><a href="./plugin.html">插件</a></li>
+        <li data-icon="category"><a href="./others.html"> 其他资料</a></li>
+    </div>
+    <div class="content">
+        <h1 id="title">扩展组件</h1>
+        <div id="expand">
+            <h2>小程序扩展组件库</h2>
+            <p>
+                扩展组件是对小程序内置组件能力的补充，包括一些常见的功能组件。<a href="https://github.com/wechat-miniprogram/miniprogram-component-plus" style="text-decoration: underline;color:blue;">github地址。</a>
+            </p>
+            <h2>如何使用</h2>
+            <p>
+                以 video-swiper 组件为例，进行说明。
+            </p>
+            <h2> 1. 引入组件</h2>
+            <p style="background-color: rgb(230, 230, 230);">
+                npm i @miniprogram-component-plus/video-swiper --save
+            </p>
+            <h2> 2. 开发者工具构建 npm，勾选“使用 npm 模块”</h2>
+            <h2> 3. 页面 json 文件中加入 usingComponents 字段</h2>
+            <p style="background-color: rgb(230, 230, 230);">
+                {<br>
+                    "usingComponents": {<br>
+                      "mp-video-swiper": "@miniprogram-component-plus/video-swiper"<br>
+                    }<br>
+                  }<br>
+            </p>
+            <h2> 4. 页面 wxml 中使用该组件</h2>
+            <p style="background-color: rgb(230, 230, 230);">
+                &lt;mp-video-swiper video-list="{{list}}"&gt;&lt;/mp-video-swiper&gt;
+            </p>
+            <h2> 修改组件内部样式</h2>
+            <p>
+                每个组件可以设置 ext-class 这个属性，该属性提供设置在组件 WXML 顶部元素的 class，组件的 addGlobalClass的options 都设置为true，所以可以在页面设置 wxss 样式来覆盖组件的内部样式。需要注意的是，如果要覆盖组件内部样式，必须 wxss 的样式选择器的优先级比组件内部样式优先级高。 addGlobalClass 在基础库2.2.3开始支持。
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>

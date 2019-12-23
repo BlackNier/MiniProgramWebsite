@@ -4,6 +4,9 @@
 <head>
     <meta charset="utf-8">
     <link href="style/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="//cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+    <script src="//cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <title>首页</title>
 </head>
 
@@ -17,12 +20,33 @@
             <button class="searchButton"><span class="sprite bg-searchIcon"></span></button>
         </span>
     </nav>
-    <div class="HomePageImg">
-        <a href="https://mp.weixin.qq.com/cgi-bin/wx">
-            <img src="Assets/HomePage/OfficialWebsite.png" alt="Picture not found!" class="picture">
-            <div>
-                官方网站
+    <div id="myCarousel" class="carousel slide">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active">
+                <a href="https://mp.weixin.qq.com/cgi-bin/wx"><img src="Assets/HomePage/OfficialWebsite.png" alt="First slide"></a>
+                <div class="carousel-caption">小程序官网</div>
             </div>
+            <div class="item">
+                <a href="https://github.com/justjavac/awesome-wechat-weapp"><img src="Assets/HomePage/GitHub1.png" alt="First slide"></a>
+                <div class="carousel-caption">小程序开发资源</div>
+            </div>
+            <div class="item">
+                <a href="https://github.com/opendigg/awesome-github-wechat-weapp"><img src="Assets/HomePage/GitHub2.png" alt="First slide"></a>
+                <div class="carousel-caption">小程序开源项目库</div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
         </a>
     </div>
     <div class="MainPageContent">

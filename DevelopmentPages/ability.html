@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="../navigatorPlugin/css/style.css" rel="stylesheet" type="text/css">
+    <script src="../navigatorPlugin/js/Navigator.js" async></script>
+    <link href="../style/style.css" rel="stylesheet" type="text/css">
+    <title>开发</title>
+</head>
+
+<body>
+    <nav id="TopNavigator">
+        <a href="../MainPage.html" class="navMenu"><span class="sprite bg-homeIcon"></span>首页</a>
+        <a href="../Introduction.html" class="navMenu"><span class="sprite bg-contentIcon"></span>介绍</a>
+        <a href="../DevelopmentHomePage.html" class="navMenu"><span class="sprite bg-contentIcon"></span>开发资料</a>
+        <span id="search">
+            <input type="text" id="searchInput" placeholder="搜索...">
+            <button class="searchButton"><span class="sprite bg-searchIcon"></span></button>
+        </span>
+    </nav>
+    <div class="nav">
+        <div class="mainTitle">开发</div>
+        <div class="subTitle" data-icon-title="subtitle">导航</div>
+        <li data-icon="category"><a href="./tools.html">工具</a> </li>
+        <li data-icon="category"><a href="./structure.html">目录结构</a></li>
+        <li data-icon="category"><a href="./ability.html">硬件能力</a></li>
+        <li data-icon="category"><a href="./expand.html">扩展组件</a></li>
+        <li data-icon="category"><a href="./plugin.html">插件</a></li>
+        <li data-icon="category"><a href="./others.html"> 其他资料</a></li>
+    </div>
+    <div class="content">
+        <h1 id="title">硬件能力</h1>
+        <p>
+            指微信小程序可以调用的设备硬件能力。
+        </p>
+        <h2>蓝牙</h2>
+        <p>
+            蓝牙适配器模块生效周期为调用 wx.openBluetoothAdapter 至调用 wx.closeBluetoothAdapter 或小程序被销毁为止。<br>
+            在小程序蓝牙适配器模块生效期间，开发者才能够正常调用蓝牙相关的小程序 API，并收到蓝牙模块相关的事件回调。<br><br>
+            <strong>示例代码</strong><br>
+            <a href="https://developers.weixin.qq.com/s/OF4Y9Gme6rZ4" style="text-decoration: underline; color:blue;">在开发者工具中预览效果</a>
+        </p>
+        <h2>NFC</h2>
+        <ul>
+            暂仅支持 HCE（基于主机的卡模拟）模式，即将安卓手机模拟成实体智能卡.
+            <li>适用机型：支持 NFC 功能，且系统版本为 Android 5.0 及以上的手机</li>
+            <li>适用卡范围：符合ISO 14443-4 标准的 CPU 卡</li>
+        </ul>
+        <h2>Wi-Fi</h2>
+        <p>
+            在小程序中支持搜索周边的 Wi-Fi，同时可以针对指定 Wi-Fi，传入密码发起连接。<br>
+            该系列接口为系统原生能力，如需查看「微信连Wi-Fi」能力及配置跳转小程序，请参考<a href="https://mp.weixin.qq.com/wiki?t=resource/res_main&id=215135855720FBA0" style="color:blue;">文档。</a><br>
+        </p>
+        <ul>
+            连接指定 Wi-Fi 接口调用时序：
+            <li>Android：startWifi —> connectWifi —> onWifiConnected</li>
+            <li>iOS（仅iOS 11及以上版本支持）：startWifi —> connectWifi —> onWifiConnected</li>
+        </ul>
+    </div>
+</body>
+
+</html>
